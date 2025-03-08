@@ -98,7 +98,8 @@ nav ul a {
   border-radius: 10px;
   width: 300px;
   padding: 20px;
-  margin-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -182,7 +183,6 @@ footer .text-center a:hover img {
 
   .portfolio .portfolio-item {
       width: 100%; /* Occupa tutta la larghezza disponibile */
-      margin: 10px 0;
   }
 
   footer .text-center {
@@ -203,11 +203,6 @@ footer .text-center a:hover img {
 
   .background h2 {
       font-size: 1.3rem;
-  }
-
-  .portfolio .portfolio-item {
-     /* Due colonne in dispositivi più grandi di smartphone */
-      margin: 15px;
   }
 
   .portfolio .portfolio-item img {
