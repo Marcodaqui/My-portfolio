@@ -31,7 +31,6 @@ nav ul a {
   font-size: 18px;
 }
 
-/* Background dell'intestazione */
 .background {
   background-image: url("../img/webdev.jpg");
   background-size: cover;
@@ -55,7 +54,6 @@ nav ul a {
   margin: 0;
 }
 
-/* Container */
 .container {
   width: 97%;
   margin: 1rem auto;
@@ -70,7 +68,6 @@ nav ul a {
   margin-bottom: 15px;
 }
 
-/* Sezione Portfolio */
 .portfolio {
   padding: 50px 20px;
   text-align: center;
@@ -128,7 +125,6 @@ nav ul a {
   margin-bottom: 15px;
 }
 
-/* Modifiche al form di contatto */
 #contact-form .container {
   max-width: 600px;
   margin: 0 auto;
@@ -140,7 +136,6 @@ nav ul a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover per immagini nei link del footer */
 footer .text-center a img {
   transition: transform 0.3s ease;
 }
@@ -149,9 +144,11 @@ footer .text-center a:hover img {
   transform: scale(1.2);
 }
 
-/* Media Queries per responsività */
+footer .text-center a {
+  text-decoration: none;
+  border: none;
+}
 
-/* Dispositivi mobili (smartphone) */
 @media (max-width: 767px) {
   nav ul {
       flex-direction: column;
@@ -182,7 +179,7 @@ footer .text-center a:hover img {
   }
 
   .portfolio .portfolio-item {
-      width: 100%; /* Occupa tutta la larghezza disponibile */
+      width: 100%;
   }
 
   footer .text-center {
@@ -195,7 +192,6 @@ footer .text-center a:hover img {
   }
 }
 
-/* Tablet e dispositivi di larghezza media (7" - 10") */
 @media (max-width: 1024px) {
   .background h1 {
       font-size: 2.5rem;
@@ -214,10 +210,9 @@ footer .text-center a:hover img {
   }
 }
 
-/* Schermi più grandi (Desktop) */
 @media (min-width: 1025px) {
   .portfolio .portfolio-item {
-      width: 300px; /* Mantieni la larghezza per schermi più grandi */
+      width: 300px;
   }
 
   .container {
