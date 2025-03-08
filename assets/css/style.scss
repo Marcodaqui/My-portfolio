@@ -1,0 +1,274 @@
+// Variabili
+$primary-color: #212529;
+$secondary-color: lightgray;
+$highlight-color: #0056b3;
+$font-family: "Trebuchet MS", Arial, sans-serif;
+$base-font-size: 18px;
+$container-padding: 20px;
+
+// Stili di base
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: $secondary-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Header
+header {
+  background-color: $primary-color;
+  padding: 10px $container-padding;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      margin-left: 30px;
+    }
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      font-size: $base-font-size;
+    }
+  }
+}
+
+// Background
+.background {
+  background-image: url("../img/webdev.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 $container-padding;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+// Container
+.container {
+  width: 97%;
+  margin: 1rem auto;
+  padding: $container-padding;
+  border-radius: 10px;
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+  }
+}
+
+// Portfolio
+.portfolio {
+  padding: 50px $container-padding;
+  text-align: center;
+  background-color: $primary-color;
+  margin-top: 50px;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: $secondary-color;
+  }
+
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .portfolio-item {
+    background-color: $secondary-color;
+    border: 2px solid $highlight-color;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      color: black;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Modifiche al form di contatto
+#contact-form .container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 2rem;
+  background-color: rgba(248, 249, 250, 0);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+// Hover per immagini nei link del footer
+footer {
+  .text-center {
+    a {
+      img {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+// Media Queries per responsività
+@media (max-width: 767px) {
+  nav {
+    ul {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .background {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .portfolio {
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .portfolio-item {
+      width: 100%; // Occupa tutta la larghezza disponibile
+      margin: 10px 0;
+    }
+  }
+
+  footer {
+    .text-center {
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .background {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .portfolio {
+    .portfolio-item {
+   // Due colonne in dispositivi più grandi di smartphone
+    margin: 15px;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  .container {
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .portfolio {
+    .portfolio-item {
+      width: 300px; // Mantieni la larghezza per schermi più grandi
+    }
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .background {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

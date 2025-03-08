@@ -1,0 +1,198 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header .navbar {
+  background-color: #343a40;
+}
+header .navbar .navbar-brand {
+  color: #f8f9fa;
+}
+header .navbar .navbar-toggler-icon {
+  background-color: #f8f9fa;
+}
+header .navbar .navbar-collapse ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+header .navbar .navbar-collapse ul li {
+  margin-left: 30px;
+}
+header .navbar .navbar-collapse ul li a {
+  color: #f8f9fa;
+  font-size: 1rem;
+  text-decoration: none;
+}
+header .navbar .navbar-collapse ul li a:hover {
+  color: #d94b14;
+}
+
+.background {
+  background-image: url("../img/webdev.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f8f9fa;
+  padding: 0 20px;
+}
+.background h1 {
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+}
+.background h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 1 1 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.portfolio {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #343a40;
+  margin-top: 50px;
+}
+.portfolio h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.portfolio .portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.portfolio .portfolio-container .portfolio-item {
+  background-color: #fff;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.portfolio .portfolio-container .portfolio-item:hover {
+  transform: scale(1.05);
+}
+.portfolio .portfolio-container .portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.portfolio .portfolio-container .portfolio-item h4 {
+  font-size: 1.5rem;
+  color: #212529;
+  margin-bottom: 10px;
+}
+.portfolio .portfolio-container .portfolio-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+#contact-form form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contact-form form h2 {
+  text-align: center;
+  color: #212529;
+  margin-bottom: 20px;
+}
+#contact-form form label {
+  font-size: 14px;
+  color: #212529;
+  margin-bottom: 5px;
+  display: block;
+}
+#contact-form form input, #contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.875rem;
+  border: 1px solid #212529;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+#contact-form form button {
+  padding: 12px 20px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  width: 100%;
+}
+#contact-form form button:hover {
+  background-color: #d94b14;
+}
+
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 20px 0;
+}
+footer .text-center a {
+  margin: 0 10px;
+}
+footer .text-center a img {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+footer .text-center a:hover img {
+  transform: scale(1.1);
+}
+footer .text-center p {
+  margin-top: 20px;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=style.css.map */
