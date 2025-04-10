@@ -44,6 +44,10 @@ nav ul a {
   padding: 0 20px;
 }
 
+.logo {
+  height: 50px;
+}
+
 .background h1 {
   font-size: 3rem;
   margin: 0 0 10px 0;
